@@ -1,10 +1,19 @@
-.ChatHistory{
-    background-color: lightcoral;
+.ChatHistory {
+    background-color: #f8f9fa;
     margin: 0;
     padding: 20px;
-    h2{
-        margin: 0;
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+    
+    h2 {
+        margin: 0 0 20px 0;
         padding: 0;
-        color:white;
+        color: #343a40;
+        text-align: center;
+    }
+    
+    .messages-container {
+        display: flex;
+        flex-direction: column;
     }
 }

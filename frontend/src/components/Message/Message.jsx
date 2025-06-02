@@ -1,18 +1,18 @@
 import React, {Component} from "react";
 import './Message.scss'
 
-class Message extends Component{
-    constructor(props){
+class Message extends Component {
+    constructor(props) {
         super(props);
         let temp = JSON.parse(this.props.message);
-        this.state={
-            message:temp
+        this.state = {
+            message: temp
         }
     }
 
-    render(){
-        return(
-            <div className="Mesage">
+    render() {
+        return (
+            <div className={`Message ${this.state.message.type === 1 ? 'system' : 'user'}`}>
                 {this.state.message.body}
             </div>
         );

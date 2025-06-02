@@ -1,14 +1,24 @@
-.Message{
+.Message {
     display: block;
-    background-color: lightblue;
-    margin: 10px auto;
-    padding: 10px 20px;
-    border-radius: 5px;
-    box-shadow: 0 5px 15px -5px black;
-    clear:both;
-
-    &.me{
-        color: rgb(138, 131, 245);
+    background-color: #e9ecef;
+    margin: 10px 20px;
+    padding: 12px 16px;
+    border-radius: 15px;
+    max-width: 70%;
+    word-wrap: break-word;
+    position: relative;
+    clear: both;
+    
+    &.system {
+        float: left;
+        background-color: #e9ecef;
+        border-bottom-left-radius: 5px;
+    }
+    
+    &.user {
         float: right;
+        background-color: #007bff;
+        color: white;
+        border-bottom-right-radius: 5px;
     }
 }

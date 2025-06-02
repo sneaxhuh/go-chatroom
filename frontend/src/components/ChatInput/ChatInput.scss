@@ -1,16 +1,28 @@
-.ChatInput{
-    width: 90%;
-    display: block;
-    margin: auto;
+.ChatInput {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
 
     input {
-        padding: 10px;
+        padding: 15px;
         margin: 0;
         background-color: white;
         font-size: 15px;
         border: none;
-        border-radius: 5px;
-        border: 1px solid black;
-        width: 98%;
+        border-radius: 25px;
+        border: 1px solid #dee2e6;
+        width: 100%;
+        box-sizing: border-box;
+        
+        &:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+        }
     }
 }
